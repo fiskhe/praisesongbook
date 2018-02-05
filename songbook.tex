@@ -9,13 +9,14 @@
 \newauthorindex{authidx}{authidx}
 
 \begin{document}
+:'(
 
 \showindex[2]{Index by Title}{titleidx}
 \showindex[2]{Index by Author}{authidx}
 
 \songsection {Worship Songs}
 
-\begin{songs}{}
+\begin{songs}{titleidx,authidx}
 
 \beginsong{Amazing Grace} 
     \beginverse
@@ -60,7 +61,8 @@
 
 \endsong
 
-\beginsong{Oceans \\ Where Feet May Fail}[]
+\beginsong{Oceans \\ Where Feet May Fail}[
+    by = {Hillsong United}]
     %TODO um maybe you should do the intro
 
     \beginverse
