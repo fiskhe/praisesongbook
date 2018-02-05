@@ -7,9 +7,9 @@
 
 \newindex{titleidx}{titleidx}
 \newauthorindex{authidx}{authidx}
+\newindex{hymnidx}{hymnidx}
 
 \begin{document}
-:'(
 
 \showindex[2]{Index by Title}{titleidx}
 \showindex[2]{Index by Author}{authidx}
@@ -17,15 +17,22 @@
 \songsection {Worship Songs}
 
 \begin{songs}{titleidx,authidx}
-
-\beginsong{Amazing Grace} 
+\beginsong{Amazing Grace}[
+    by = {John Newton},
+    cr = {Public Domain},
+    li = {(because it's old)}]
+    
+    \indextitleentry[hymnidx]{Amazing Grace}
+    
     \beginverse
     Am\[C]azing Grace, how sw\[F]eet the s\[C]ound,
     That s\[C]aved a wretch like m\[G]e.
     I \[C]once was lost but n\[F]ow I'm f\[C]ound,
     Was bl\[Am]ind, but n\[G]ow I s\[C]ee.
     \endverse
-
+    
+    \chordsoff
+    
     \beginverse
     'Twas Grace that taught,
     my heart to fear.
@@ -56,13 +63,102 @@
     \endverse
 \endsong
 
+%%%%
+\beginsong{Be Still My Soul}[]
+    \indextitleentry[hymnidx]{Be Still My Soul}
+    
+    \beginverse
+    Be still, my soul: the Lord is on thy side.
+    Bear patiently the cross of grief or pain.
+    Leave to thy God to order and provide;
+    In every change, He faithful will remain.
+    Be still, my soul: thy best, thy heavenly Friend
+    Through thorny ways leads to a joyful end. 
+    \endverse
 
-\beginsong{Be Thou My Vision}[]
-
+    \beginverse
+    Be still, my soul: thy God doth undertake
+    To guide the future, as He has the past.
+    Thy hope, thy confidence let nothing shake;
+    All now mysterious shall be bright at last.
+    Be still, my soul: the waves and winds still know
+    \endverse
+    
+    \beginverse
+    Be still, my soul: when dearest friends depart,
+    And all is darkened in the vale of tears,
+    Then shalt thou better know His love, His heart,
+    Who comes to soothe thy sorrow and thy fears.
+    Be still, my soul: thy Jesus can repay
+    From His own fullness all He takes away. 
+    \endverse
+    
+    \beginverse
+    Be still, my soul: the hour is hastening on
+    When we shall be forever with the Lord.
+    When disappointment, grief and fear are gone,
+    Sorrow forgot, love’s purest joys restored.
+    Be still, my soul: when change and tears are past
+    All safe and blessèd we shall meet at last. 
+    \endverse
+    
+    \beginverse
+    Be still, my soul: begin the song of praise
+    On earth, believing, to Thy Lord on high;
+    Acknowledge Him in all thy words and ways,
+    So shall He view thee with a well pleased eye.
+    Be still, my soul: the Sun of life divine
+    Through passing clouds shall but more brightly shine. 
+    \endverse
 \endsong
 
+%%%%
+\beginsong{Be Thou My Vision}[]
+    \indextitleentry[hymnidx]{Be Thou My Vision}
+    
+    \beginverse
+    \[D]Be Thou my \[G]vision, oh \[D]Lord of \[A]my \[D]heart
+    \[Asus4]Naught be all \[A]else to me, \[G]save that Thou \[A]art
+    \[G]Thou my best thought by \[D]day or by \[G A]night
+    \[D]Waking or \[G]sleeping, Thy \[Asus4 A]presence my \[D]light
+    \endverse
+
+    \chordsoff
+
+    \beginverse
+    Be Thou my wisdom and Thou my true word
+    I ever with Thee and Thou with me, Lord
+    Thou my great Father, I Thy true son
+    Thou in me dwelling and I with Thee one
+    \endverse
+
+    \beginverse
+    Be Thou my battle Shield, Sword for the fight
+    Be Thou my Dignity, Thou my Delight
+    Thou my soul’s Shelter, Thou my high Tower
+    Raise Thou me heavenward, O Power of my power
+    \endverse
+
+    \beginverse
+    Riches I heed not, nor man’s empty praise
+    Thou mine Inheritance, now and always
+    Thou and Thou only, first in my heart
+    High King of Heaven, my Treasure Thou art 
+    \endverse
+
+    \beginverse
+    High King of Heaven my victory won
+    May I reach heaven's joys, oh, bright heaven's sun
+    Heart of my own heart whatever befall
+    Still be my vision, oh Ruler of all
+    \endverse
+\endsong
+
+%%
 \beginsong{Oceans \\ Where Feet May Fail}[
-    by = {Hillsong United}]
+    by = {Joel Houston, Matt Crocker, Salomon Ligthelm - Hillsong United},
+    cr = {\copyright~2012 Hillsong Music Publishing},
+    li = {CCLI\# 6428767}]
     %TODO um maybe you should do the intro
 
     \beginverse
@@ -82,6 +178,7 @@
     \endchorus
 
     %Interlude pls
+    \chordsoff
 
     \beginverse
     Your grace abounds in deepest waters
@@ -100,6 +197,8 @@
     My soul will rest in Your embrace
     For I am Yours and You are mine
     \endchorus
+
+    \chordson
     
     \beginverse
     \[Bm]Spirit lead me where my tr\[G]ust is without borders
@@ -109,11 +208,10 @@
     And my f\[D]aith will be made stronger
     In the pr\[A]esence of my Savior
     \endverse
-
 \endsong
-
-
 \end{songs}
+
+\showindex[2]{Traditional}{hymnidx}
 
 \end{document}
 
